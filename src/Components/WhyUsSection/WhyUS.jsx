@@ -67,7 +67,7 @@ const WhyUS = () => {
   return (
     <div
       data-aos="fade-up"
-      className=" relative max-sm:mt-10 flex flex-col mx-auto w-full min-h-screen h-[130vh] bg-white "
+      className=" relative max-sm:mt-10 flex flex-col mx-auto w-full min-h-screen h-[120vh] bg-white "
     >
       <div className="box bg-[#fff] shadow-2xl rounded-3xl absolute top-[-25vh] 2xl:top-[-20vh] translate-x-[-50%] left-1/2 xl:w-[70%] w-[90%] h-[50vh] min-h-fit max-960:hidden">
         <div className=" head flex justify-between p-10 xl:p-20 xl:pb-0">
