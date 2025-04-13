@@ -2,7 +2,7 @@ import React from "react";
 
 const Step = () => {
   return (
-    <div className="min-h-[60vh] w-full relative bg-SecBlue p-20">
+    <div className="min-h-[60vh] w-full relative bg-SecBlue max-sm:mt-24 p-20">
       <div className=" container mx-auto flex flex-col items-center max-xl:justify-center w-full h-full">
         <div className="w-full xl:pt-20 flex flex-col items-start justify-start max-xl:items-center max-xl:justify-center">
           <span
