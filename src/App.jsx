@@ -1,4 +1,4 @@
-import NavBar from "./Components/NavbarSection/navBar.jsx";
+import Navbar from "./Components/NavbarSection/Navbar.jsx";
 import Hero from "./Components/HeroSection/Hero.jsx";
 import WhyUS from "./Components/WhyUsSection/WhyUS.jsx";
 import Step from "./Components/Step/Step.jsx";
@@ -8,7 +8,7 @@ import Footer from "./Components/Footer/Footer.jsx";
 const App = () => {
   return (
     <div className="relative  overflow-hidden ">
-      <NavBar />
+      <Navbar />
       <Hero />
       <WhyUS />
       <Step />

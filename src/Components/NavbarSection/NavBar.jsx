@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import {navLinks} from "../../utils/data";
-const NavBar = () => {
+import { navLinks } from "../../utils/data";
+const Navbar = () => {
   // حالة التحكم في إظهار وإخفاء الـ Sidebar
   const [isHidden, setIsHidden] = useState(true);
 
@@ -108,4 +108,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;
