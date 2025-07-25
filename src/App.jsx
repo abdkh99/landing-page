@@ -1,4 +1,4 @@
-import Navbar from "./Components/NavbarSection/Navbar.jsx";
+import Navbar from "./Components/NavbarSection/NavBar.jsx";
 import Hero from "./Components/HeroSection/Hero.jsx";
 import WhyUS from "./Components/WhyUsSection/WhyUS.jsx";
 import Step from "./Components/Step/Step.jsx";
