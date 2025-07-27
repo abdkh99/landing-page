@@ -57,15 +57,21 @@ const chartOptions = {
 
 export default function PayzoDashboard() {
   return (
-    <div className="max-w-6xl mx-auto pt-8 px-4 space-y-6 ">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="bg-white rounded-2xl p-6 shadow">
-          <h3 className="text-2xl font-bold mb-2">3k+</h3>
+    <div
+      className="mx-auto
+    max-w-6xl
+    space-y-6
+    px-4
+    pt-8"
+    >
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div className="rounded-2xl bg-white p-6 shadow">
+          <h3 className="mb-2 text-2xl font-bold">3k+</h3>
           <p className="text-gray-600">Businesses already running on Payzo</p>
         </div>
 
-        <div className="bg-white rounded-2xl p-6 shadow">
-          <h3 className="text-xl font-bold mb-2">
+        <div className="rounded-2xl bg-white p-6 shadow">
+          <h3 className="mb-2 text-xl font-bold">
             Instant Withdraw your funds at any time
           </h3>
           <p className="text-gray-600">
@@ -73,8 +79,8 @@ export default function PayzoDashboard() {
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl p-6 shadow">
-          <h3 className="text-xl font-bold mb-2">No asset volatility</h3>
+        <div className="rounded-2xl bg-white p-6 shadow">
+          <h3 className="mb-2 text-xl font-bold">No asset volatility</h3>
           <p className="text-gray-600">
             Generate returns on your cash reserves without making any
             investments
@@ -82,12 +88,12 @@ export default function PayzoDashboard() {
         </div>
       </div>
 
-      <div className="bg-white rounded-2xl p-6 shadow-2xl">
-        <h3 className="text-xl font-bold mb-2">Summary</h3>
-        <p className="text-gray-600 mb-4">
+      <div className="rounded-2xl bg-white p-6 shadow-2xl">
+        <h3 className="mb-2 text-xl font-bold">Summary</h3>
+        <p className="mb-4 text-gray-600">
           $1,876,580 <span className="text-sm text-gray-400">6 Months</span>
         </p>
-        <div className="w-full h-64">
+        <div className="h-64 w-full">
           <Line data={chartData} options={chartOptions} />
         </div>
       </div>

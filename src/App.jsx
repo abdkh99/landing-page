@@ -7,9 +7,9 @@ import Footer from "./Components/Footer/Footer.jsx";
 
 const App = () => {
   return (
-    <div className="relative  overflow-hidden ">
+    <div className="relative overflow-hidden ">
       <Navbar />
-      <Hero />
+      <Hero/>
       <WhyUS />
       <Step />
       <Ourmission />

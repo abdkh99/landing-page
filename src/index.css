@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
 
 @tailwind base;
-@tailwind Components;
+@tailwind components;
 @tailwind utilities;
 
 :root {
@@ -313,3 +313,202 @@ h3 a:hover {
   width: 100%;
 }
 /* End Hover Button */
+.but button {
+  --border-right: 6px;
+  --text-stroke-color: rgb(255, 255, 255);
+  --animation-color: #ffffff;
+  --fs-size: 1.2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+.font-arial{
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button-1:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 5px 23px var(--animation-color))
+}
+/* Input  */
+.inputContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#inputField {
+  border: 2px solid purple;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 12px 15px;
+  color: black;
+  font-weight: 500;
+  outline: none;
+  caret-color: rgb(155, 78, 255);
+  transition-duration: .3s;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.userIcon {
+  position: absolute;
+  fill: rgb(155, 78, 255);
+  width: 12px;
+  top: -23px;
+  left: -15px;
+  opacity: 0;
+  transition: .2s linear;
+}
+
+.usernameLabel {
+  position: absolute;
+  top: -25px;
+  left: 5px;
+  color: purple;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  transition: .2s linear;
+  opacity: 0;
+}
+
+#inputField:focus ~ .usernameLabel,
+#inputField:valid ~ .usernameLabel {
+  transform: translateX(20px);
+  opacity: 1;
+}
+
+#inputField:focus ~ .userIcon,
+#inputField:valid ~ .userIcon {
+  transform: translateX(20px);
+  opacity: 1;
+}
+
+#inputField:focus,
+#inputField:valid {
+  background-color: #ffffff38;
+  transition-duration: .3s;
+}
+/* Start Image  */
+.custom-shape-divider-top-1753626632 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1753626632 svg {
+    position: relative;
+    display: block;
+    width: calc(106% + 1.3px);
+    height: 59px;
+}
+
+.custom-shape-divider-top-1753626632 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+/* 2 Image */
+.custom-shape-divider-bottom-1753626675 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1753626675 svg {
+    position: relative;
+    display: block;
+    width: calc(128% + 1.3px);
+    height: 73px;
+}
+
+.custom-shape-divider-bottom-1753626675 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Burger Button */
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: .5s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(176, 92, 255);
+  border-radius: 4px;
+}
+
+#bar2 {
+  transition-duration: .8s;
+}
+
+#bar1,#bar3 {
+  width: 70%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: .5s;
+  transform: rotate(180deg);
+}

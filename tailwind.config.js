@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         MainBlue: "#827CBF",
-        SecBlue: "#3E419E",
+        SecBlue: "#5a189a",
         MainWhite: "#E9F3F4",
         MainBlack: "#1D1E20",
       },
@@ -15,7 +15,7 @@ export default {
         openSans: ["Open Sans", "sans-serif"],
         lato: ["Lato", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
-        cairo: ["Cairo", "sans-serif"], 
+        cairo: ["Cairo", "sans-serif"],
       },
       screens: {
         "max-sm": { max: "639px" }, // أقل من 640px
